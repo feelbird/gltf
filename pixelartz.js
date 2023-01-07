@@ -70,7 +70,7 @@ fetch('https://uploads-ssl.webflow.com/637d37d31d152db9a1d8b984/63b8e87646576d2b
 
 .to(pivot.rotation, {y: 2 * Math.PI, ease: "Power2.easeInOut", duration: 20})
 .fromTo("#pixel", {opacity: 0}, {opacity: 1, duration: 5},"<")
-.to("#pixel", {y: 500, duration: 20},"<")
+.to("#pixel", {y: 100, duration: 20},"<")
 .to("#pixel", {opacity: 0, scale: 0.9, duration: 5});
         })
   });
