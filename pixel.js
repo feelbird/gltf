@@ -75,17 +75,12 @@ fetch('https://uploads-ssl.webflow.com/637d37d31d152db9a1d8b984/63b8e87646576d2b
 
 .fromTo(pivot.rotation,
       
-              { y: 0, duration: 5 },
-              { y: 2 * Math.PI, ease: "Power2.easeInOut", duration: 5 },
+            { y: 0, duration: 5 }, { y: 2 * Math.PI, ease: "Power2.easeInOut", duration: 5 }, "<" )
             
-            "<"
-            )
-            
-            .fromTo("#app", 
+.fromTo("#app", 
 
             { scale: 1, y: 100, duration: 5  },
-            { scale: 0.7, y: 500, duration: 5 }, "<"           
-          )
+            { scale: 0.7, y: 500, duration: 5 }, "<" );
         })
   });
 
