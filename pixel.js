@@ -3,7 +3,7 @@ import { OrbitControls } from 'https://cdn.skypack.dev/three@0.129.0/examples/js
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
 
 // Create Scene + Camera
-const container = document.getElementById("8bit");
+const container = document.getElementById("pixel");
 const mainScene = new THREE.Scene();
 const mainCamera = new THREE.PerspectiveCamera(
     65,
@@ -58,29 +58,25 @@ fetch('https://uploads-ssl.webflow.com/637d37d31d152db9a1d8b984/63b8e87646576d2b
   
       // Add the object as a child of the pivot point
       pivot.add(gltfModel.scene);
-  
-  
-      gsap.registerPlugin(ScrollTrigger);
 
-      pivot.add(gltfModel.scene);
       gsap.timeline({
         scrollTrigger: {
-          trigger: ".container",
-          start: "top+=45% top+=30% ",
-          end: "bottom+=20% top+=31%",
+          trigger: ".about__container",
+          start: "top-=50% top+=30% ",
+          end: "bottom top+=31%",
           markers: true,
-          scrub: 3
+          scrub: 2
         }
       })
 
 .fromTo(pivot.rotation,
       
-            { y: 0, duration: 5 }, { y: 2 * Math.PI, ease: "Power2.easeInOut", duration: 5 }, "<" )
+            {y: 0, duration: 1 }, {y: 2 * Math.PI, ease: "Power2.easeInOut", duration: 9 }, "<" )
             
-.fromTo("#app", 
+.fromTo("#pixel", 
 
-            { scale: 1, y: 100, duration: 5  },
-            { scale: 0.7, y: 500, duration: 5 }, "<" );
+            { opacity: 0, y: -100, duration: 1  },
+            { opacity: 1, y: 500, duration: 9 }, "<" );
         })
   });
 
