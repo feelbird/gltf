@@ -51,13 +51,21 @@ fetch('https://uploads-ssl.webflow.com/637d37d31d152db9a1d8b984/63b8e87646576d2b
       const pivot = new THREE.Object3D();
       pivot.position.set(0, 0, 0);
       mainScene.add(pivot);
+  
+      // Set the object's position relative to the pivot point
+      gltf.scene.position.set(0, 0, -0.1);
+      gltf.scene.rotation.set(-0.5,0.1,0.1);
+  
+      // Add the object as a child of the pivot point
+      pivot.add(gltf.scene);
+  
+  
+      gsap.registerPlugin(ScrollTrigger);
 
-      gltfModel.scene.position.set(0, 0, 0);
-      gltfModel.scene.scale.set(1, 1, 1);
       pivot.add(gltfModel.scene);
       gsap.timeline({
         scrollTrigger: {
-          trigger: ".skills__flexbox",
+          trigger: ".about__container",
           start: "top-=43% top+=30% ",
           end: "bottom+=20% top+=31%",
           markers: false,
