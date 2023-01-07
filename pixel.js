@@ -32,6 +32,7 @@ renderer.outputEncoding =  THREE.sRGBEncoding;
 renderer.gammaFactor =  2.2;
 container.appendChild(renderer.domElement);
 
+
 // Load 3D Model
 
 const loader = new GLTFLoader(); 
@@ -39,8 +40,7 @@ fetch('https://uploads-ssl.webflow.com/637d37d31d152db9a1d8b984/63b8e87646576d2b
   .then(response => response.arrayBuffer())
   .then((arrayBuffer) => {
 
-    const loader = new GLTFLoader();
-    loader.parse(arrayBuffer, '', (gltfModel) => {
+      loader.parse(arrayBuffer, '', (gltfModel) => {
 
       mainScene.add(gltfModel.scene);
 
@@ -65,8 +65,8 @@ fetch('https://uploads-ssl.webflow.com/637d37d31d152db9a1d8b984/63b8e87646576d2b
       pivot.add(gltfModel.scene);
       gsap.timeline({
         scrollTrigger: {
-          trigger: ".about__container",
-          start: "top-=43% top+=30% ",
+          trigger: ".container",
+          start: "top+=45% top+=30% ",
           end: "bottom+=20% top+=31%",
           markers: true,
           scrub: 3
@@ -81,7 +81,7 @@ fetch('https://uploads-ssl.webflow.com/637d37d31d152db9a1d8b984/63b8e87646576d2b
             "<"
             )
             
-            .fromTo("#8bit", 
+            .fromTo("#app", 
 
             { scale: 1, y: 100, duration: 5  },
             { scale: 0.7, y: 500, duration: 5 }, "<"           
