@@ -75,6 +75,11 @@ fetch('https://uploads-ssl.webflow.com/637d37d31d152db9a1d8b984/63b8e87646576d2b
         })
   });
 
+window.addEventListener("resize", function () {
+  renderer.setSize(container.offsetWidth, container.offsetHeight);
+  mainCamera.aspect = container.offsetWidth / container.offsetHeight;
+  mainCamera.updateProjectionMatrix();
+});
   
 // Render Scene
 function render() {
