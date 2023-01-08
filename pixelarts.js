@@ -63,7 +63,7 @@ fetch('https://uploads-ssl.webflow.com/637d37d31d152db9a1d8b984/63b8e87646576d2b
           trigger: ".about__container",
           start: "top-=50% top+=30% ",
           end: "bottom top+=31%",
-          markers: true,
+          markers: false,
           scrub: 2
         }
       })
