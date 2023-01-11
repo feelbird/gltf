@@ -82,7 +82,7 @@ fetch(
           duration: 20
         })
         .fromTo("#app2", { opacity: 0 }, { opacity: 1, duration: 5 }, "<")
-        .to("#app2", { y: 500, duration: 20 }, "<")
+        .to("#app2", { y: 400, duration: 20 }, "<")
         .to("#app2", { opacity: 0, scale: 0.9, duration: 5 });
     });
   });
