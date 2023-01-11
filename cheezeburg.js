@@ -4,7 +4,7 @@ const container1 = document.getElementById("app2");
 const mainScene1 = new THREE.Scene();
 const mainCamera1 = new THREE.PerspectiveCamera(
   45,
-  container.offsetWidth / container.offsetHeight,
+  container1.offsetWidth / container1.offsetHeight,
   0.1,
   20
 );
