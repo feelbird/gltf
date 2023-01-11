@@ -16,15 +16,15 @@ mainCamera1.rotation.set(0, 0, -0.2);
 // Add Point Lights
 
 const ambientlight = new THREE.AmbientLight(0x943b41, 0.8);
-mainScene.add(ambientlight);
+mainScene1.add(ambientlight);
 
 const directionalLight = new THREE.DirectionalLight(0xffd4d7, 2);
 directionalLight.position.set(6, 10, 5);
-mainScene.add(directionalLight);
+mainScene1.add(directionalLight);
 
 var fillLight = new THREE.PointLight(0xfc9003, 15, 100);
 fillLight.position.set(5, 0, 5);
-mainScene.add(fillLight);
+mainScene1.add(fillLight);
 
 // Create renderer1
 const renderer1 = new THREE.WebGLrenderer(
