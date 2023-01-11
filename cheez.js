@@ -27,11 +27,7 @@ fillLight.position.set(5, 0, 5);
 mainScene1.add(fillLight);
 
 // Create renderer1
-const renderer1 = new THREE.WebGLrenderer(
-{
-        alpha: true
-        , antialias: true
-});
+const renderer1 = new THREE.WebGLrenderer({alpha: true, antialias: true});
 renderer1.setSize(container1.offsetWidth, container1.offsetHeight);
 renderer1.physicallyCorrectLights = true;
 renderer1.outputEncoding = THREE.sRGBEncoding;
