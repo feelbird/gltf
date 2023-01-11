@@ -38,7 +38,7 @@ renderer1.outputEncoding = THREE.sRGBEncoding;
 renderer1.gammaFactor = 2.2;
 container1.appendChild(renderer1.domElement);
 // Load 3D Model
-const loader = new GLTFLoader();
+const loader2 = new GLTFLoader();
 fetch('https://uploads-ssl.webflow.com/637d37d31d152db9a1d8b984/63be218948f0a9084273ccc0_cheese.glb.txt')
         .then(response => response.arrayBuffer())
         .then((arrayBuffer) =>
