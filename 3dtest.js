@@ -1,18 +1,3 @@
-Closure Compiler logo Closure CompilerREST API | Help
-Add a URL:	
-http://
- 
-Example: http://www.example.com/bigfile.js
-Optimization:	 Whitespace only     Simple     Advanced
-   Which optimization is right for my code?
-Formatting:	 Pretty print     Print input delimiter
- 	 Reset
-// ==ClosureCompiler==
-// @output_file_name default.js
-// @compilation_level SIMPLE_OPTIMIZATIONS
-// @formatting pretty_print
-// ==/ClosureCompiler==
-​
 const container1 = document.getElementById("pixel");
 const mainScene1 = new THREE.Scene();
 const mainCamera1 = new THREE.PerspectiveCamera(65, container1.offsetWidth / container1.offsetHeight, 0.1, 20);
