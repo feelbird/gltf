@@ -41,7 +41,7 @@ renderer.gammaFactor =  2.2;
 container.appendChild(renderer.domElement);
 // Load 3D Model
 const loader = new GLTFLoader(); 
-fetch('https://uploads-ssl.webflow.com/637d37d31d152db9a1d8b984/63b4b8318991fae567d39b48_burger.glb.txt')
+fetch('https://uploads-ssl.webflow.com/637d37d31d152db9a1d8b984/63be218948f0a9084273ccc0_cheese.glb.txt')
   .then(response => response.arrayBuffer())
   .then((arrayBuffer) => {
 
