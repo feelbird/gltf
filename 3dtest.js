@@ -1,35 +1,3 @@
-const container1 = document.getElementById("pixel");
-const mainScene1 = new THREE.Scene();
-const mainCamera1 = new THREE.PerspectiveCamera(65, container1.offsetWidth / container1.offsetHeight, 0.1, 20);
-mainCamera1.position.set(0, 0, 0.5);
-// Add Point Lights
-const ambientlight1 = new THREE.AmbientLight(0x943b41, 0.5);
-mainScene1.add(ambientlight1);
-const directionallight1 = new THREE.DirectionalLight(0xffd4d7, 3);
-directionallight1.position.set(6, 10, 5)
-mainScene1.add(directionallight1);
-// Create renderer1
-const renderer1 = new THREE.WebGLrenderer(
-{
-        alpha: true
-        , antialias: true
-});
-renderer1.setSize(container1.offsetWidth, container1.offsetHeight);
-renderer1.physicallyCorrectLights = true;
-renderer1.outputEncoding = THREE.sRGBEncoding;
-renderer1.gammaFactor = 2.2;
-container1.appendChild(renderer1.domElement);
-// Load 3D Model
-const loader = new GLTFLoader();
-fetch('https://uploads-ssl.webflow.com/637d37d31d152db9a1d8b984/63b8e87646576d2b8794d0c1_pixelart.glb.txt')
-        .then(response => response.arrayBuffer())
-        .then((arrayBuffer) =>
- 	Compilation was a success!
-Original Size:	2.17KB gzipped (9.78KB uncompressed)
-Compiled Size:	1.52KB gzipped (6.3KB uncompressed)
-Saved 29.84% off the gzipped size (35.58% without gzip)
-The code may also be accessed at default.js.
-
 var container1 = document.getElementById("pixel"), mainScene1 = new THREE.Scene(), mainCamera1 = new THREE.PerspectiveCamera(65, container1.offsetWidth / container1.offsetHeight, 0.1, 20);
 mainCamera1.position.set(0, 0, 0.5);
 var ambientlight1 = new THREE.AmbientLight(9714497, 0.5);
@@ -161,4 +129,3 @@ function render() {
   requestAnimationFrame(render);
 }
 render();
-©2009 Google - Terms of Service - Privacy Policy - Google Home
