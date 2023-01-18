@@ -68,11 +68,12 @@ fetch("https://uploads-ssl.webflow.com/637d37d31d152db9a1d8b984/63b8e87646576d2b
                                 }, "<")
                                 .to("#pixel",
                                 {
-                                        y: 100,
+                                        y: 150,
                                         duration: 20
                                 }, "<")
                                 .to("#pixel",
-                                {
+                                {       
+                                        y: 100,
                                         opacity: 0,
                                         scale: .9,
                                         duration: 5
