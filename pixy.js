@@ -46,8 +46,8 @@ fetch("https://uploads-ssl.webflow.com/637d37d31d152db9a1d8b984/63b8e87646576d2b
                                         scrollTrigger:
                                         {
                                                 trigger: ".about__container",
-                                                start: "top-=20% top+=10% ",
-                                                end: "bottom+=10% top+=10%",
+                                                start: "top-=20% top+=20% ",
+                                                end: "bottom+=10% top+=20%",
                                                 markers: !1,
                                                 scrub: 2
                                         }
